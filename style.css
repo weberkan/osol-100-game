@@ -1,0 +1,92 @@
+/* Genel Ayarlar */
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #121212; /* Koyu arka plan */
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0; /* Yazılar için açık gri ton */
+}
+
+/* Ana Konteyner */
+#game-container {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
+  background: #1e1e1e; /* Konteyner koyu ton */
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Başlık */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4fc3f7; /* Açık mavi */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Skor ve Zaman Gösterimi */
+#score-board,
+#timer {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e0e0e0; /* Yazı rengi */
+  margin: 10px 10px;
+  background: #2a2a2a; /* Koyu gri arka plan */
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  min-width: 120px;
+  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.7),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Skor ve Zaman Vurguları */
+#score-board span,
+#timer span {
+  color: #f06292; /* Pembe vurgu */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Oyun Alanı */
+#play-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #2e2e2e; /* Daha koyu gri */
+  border: 2px solid #3a3a3a;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.7),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* OSOL Simgesi */
+.osol-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/Osol100.jpeg"); /* Resim yolu */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: fade 2s linear;
+  box-shadow: 0px 4px 10px rgba(79, 195, 247, 0.5); /* Hafif parlama efekti */
+}
+
+/* Animasyon */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
